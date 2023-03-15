@@ -1,4 +1,6 @@
 import html
+
+
 class QuizLogic:
     def __init__(self, question_list):
         self.question_number = 0
@@ -6,10 +8,11 @@ class QuizLogic:
         self.score = 0
 
     def still_have_questions(self):
-        if self.question_number < len(self.question_list)
+        if self.question_number < len(self.question_list):
             return True
         else:
             return False
+
     def next_question(self):
         index = self.question_number
         current_question = self.question_list[index]
@@ -32,4 +35,3 @@ class QuizLogic:
     def end_of_quiz(self):
         print('You completed the quiz!')
         print(f'Your final score is: {self.score}')
-
